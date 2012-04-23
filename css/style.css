@@ -1,0 +1,102 @@
+@media all {
+
+body{
+  background-color: rgb(255,255,255);
+  font-family: sans-serif;
+ }
+
+section {
+  margin: 0 8% 1em 8%;
+  padding: 2em;
+  border: none thin black;
+  background-color: rgb(240,240,240);
+ }
+
+h1{
+  text-align: center;
+ }
+
+h1#page-title {
+  padding: 0.5em 0 1em 0;
+  text-align: center;
+  font-size: 3em;
+ }
+
+/*
+Navigation Box
+*/
+
+nav {
+  margin: 2em 12% 2em 12%;
+  padding: 1em 0 1em 0;
+  width: 25em;
+  background-color: rgb(240,240,240);
+ }
+
+nav h1 {
+  font-family: serif;
+  margin: 0 0 0.5em 0;
+}
+
+nav ol {
+  margin: 0.1em 0 0 2em;
+ }
+
+nav a {
+  text-decoration: none;
+  color: black;
+ }
+ 
+
+/*
+Headings
+ */
+
+h1, h2, h3, h4, h5, h6, h7 {
+  font-family: serif;
+  font-weight: normal;
+ }
+ 
+h2, h3, h4, h5, h6, h7 {
+  margin: 0.8em 0 0 7%;
+  padding: 0.2em;
+ }
+
+/*h2:before, h3:before, {
+  content: "<hr />";
+ }*/
+
+h1 {
+  font-size: 2em;
+  margin: 0 0 0 0;
+ }
+ 
+h2 {
+  font-size: 1.65em;
+}
+
+h3 {
+ font-size: 1.4em;
+ }
+ 
+h4 {
+  font-size: 1.15em;
+ }
+
+
+/*
+Arbitrary Elements
+*/
+
+blockquote {
+  border-left: solid thick black;
+  padding: 0 0 0 1em;
+  margin: 0;
+ }
+
+ul, ol{
+ padding: 0 0 0 1.5em;
+ }
+
+            }
+
