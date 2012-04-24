@@ -1,76 +1,212 @@
-@media all {
+/****************************
+**  Style for all devices  **
+****************************/
+
+/*
+General
+*/
 
 body{
-  background-color: rgb(255,255,255);
   font-family: sans-serif;
  }
 
 section {
-  margin: 0 8% 1em 8%;
-  padding: 2em;
-  border: none thin black;
-  background-color: rgb(240,240,240);
- }
-
-h1{
-  text-align: center;
- }
-
-h1#page-title {
-  padding: 0.5em 0 1em 0;
-  text-align: center;
-  font-size: 3em;
+  border-bottom: solid thin rgb(220,220,220);
  }
 
 /*
-Navigation Box
+Page header
 */
 
-nav {
-  margin: 2em 12% 2em 12%;
-  padding: 1em 0 1em 0;
-  width: 25em;
-  background-color: rgb(240,240,240);
+header {
+  margin: -0.5 -0.5em 0 -0.5em;
+  text-align: center;
  }
-
-nav h1 {
-  font-family: serif;
-  margin: 0 0 0.5em 0;
-}
-
-nav ol {
-  margin: 0.1em 0 0 2em;
- }
-
-nav a {
-  text-decoration: none;
-  color: black;
- }
- 
 
 /*
-Headings
+Section headings
  */
 
 h1, h2, h3, h4, h5, h6, h7 {
   font-family: serif;
   font-weight: normal;
  }
+
+h1 {
+  text-align: center;
+ }
+
+/*
+Navigation
+*/
+
+nav a {
+  text-decoration: none;
+  color: black;
+ }
+
+nav a:hover {
+  color: #b91e27;
+ }
+
+nav h1 {
+  font-family: serif;
+  margin: 0 0 0.5em 0;
+} 
+
+
+/* Nav to-top elements */
+
+nav.to-top {
+  display: block;
+  padding: 2.5em 0.5em 0.5em 2.5em;
+  margin: 0;
+  width: auto;
+  position: absolute;
+  right: 2em;
+  left: auto;
+  border-style: none;
+  background-color: transparent;
+ }
+
+nav.to-top a {
+  margin: 0; border: 0;
+  text-decoration: none;
+  color: royalblue;
+  font-size: 0.8em;
+  font-weight: bold;
+  font-family: sans-serif;
+ }
+
+nav.to-top a:hover {
+  text-decoration: underline;
+ }
+
  
+/********************************************
+**  Style for devices with small displays  **
+********************************************/
+@media (max-width: 46.9em){
+
+/*
+General
+*/
+
+section {
+  margin: 0 -0.5em 1em -0.5em;
+  padding: 0 0.5em 1em 0.5em;
+ }
+
+/*
+Page header
+*/
+
+header h1 {
+  padding: 0.5em 0 0 0;
+  font-size: 2.5em;
+ }
+
+/*
+Section headings
+ */
+
+h2, h3, h4, h5, h6, h7 {
+  margin: 0.2em 0 0 1em;
+  padding: 0.1em;
+ }
+
+h1 {
+  font-size: 1.5em;
+/*  margin: 0 0 1em 0;*/
+ }
+
+h2 {
+  font-size: 1.2em;
+}
+
+h3 {
+ font-size: 1.13em;
+ }
+ 
+h4 {
+  font-size: 1.07em;
+ }
+
+
+/*
+Navigation
+*/
+
+/* Nav bar */
+
+nav {
+  margin: 1em 10% 1em 10%;
+  padding: 1em 0 0 0;
+  width: 22em;
+  border: solid thin rgb(240,240,240);
+ }
+
+nav ul {
+  margin: 0;
+  list-style: square outside;
+ }
+
+nav a {
+  font-family: serif;
+ }
+
+nav a:hover {
+  font-weight: bold;
+ }
+
+}
+
+
+/********************************************
+**  Style for devices with large displays  **
+********************************************/
+@media (min-width: 47em) {
+
+
+/*
+General
+*/
+
+section {
+  margin: 0 -0.5em 1em -0.5em;
+  padding: 2em 8% 2em 8%;
+ }
+
+
+/*
+Page header
+*/
+ 
+header {
+  margin: 0 -0.5em 0 -0.5em;
+ }
+ 
+header h1 {
+  padding: 0.5em 0 0 0;
+  font-size: 4em;
+ }
+
+
+/*
+Section headings
+ */
+
 h2, h3, h4, h5, h6, h7 {
   margin: 0.8em 0 0 7%;
   padding: 0.2em;
  }
 
-/*h2:before, h3:before, {
-  content: "<hr />";
- }*/
-
 h1 {
   font-size: 2em;
-  margin: 0 0 0 0;
+  text-align: center;
+  margin: 0 0 1em 0;
  }
- 
+
 h2 {
   font-size: 1.65em;
 }
@@ -85,7 +221,7 @@ h4 {
 
 
 /*
-Arbitrary Elements
+Other contenmt elements
 */
 
 blockquote {
@@ -98,5 +234,60 @@ ul, ol{
  padding: 0 0 0 1.5em;
  }
 
-            }
+
+/*
+Navigation
+*/
+
+/* Nav bar */
+
+nav {
+  padding: 0 0 3.5em 0;
+  margin: 0 0 0 0;
+ }
+
+nav h1 {
+  display: none;*//* (display off-page?) */
+ }
+
+nav ul {
+  margin: 0 0 0 -22.5em;
+  padding: 0;
+  float: left;
+  position: fixed;
+  width: 45em;
+  left: 50%;
+  border: solid thin rgb(240,240,240);
+  list-style: none outside;
+ }
+
+nav li {
+  float: left;
+  margin: 1em;
+ }
+ 
+nav li ul {
+  display: none;
+ }
+
+nav a {
+  font-size: 1.1em;
+  font-weight: bold;
+  font-family: sans-serif;
+ }
+
+}
+
+
+/**************************
+**  Style for printouts  **
+**************************/
+@media print {
+
+nav.to-top {
+  display: none;
+ }
+
+}
+
 
