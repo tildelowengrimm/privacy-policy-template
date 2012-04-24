@@ -55,6 +55,48 @@ nav h1 {
 } 
 
 
+/*
+General content elements and styles
+*/
+
+ul, ol {
+  color: #b91e27;
+  font-weight: bold;
+  font-family: serif;
+  font-size: 1.2em;
+ }
+
+ul {
+  list-style: square outside;
+ }
+
+ol span {
+  color: black;
+  font-weight: normal;
+  font-family: sans-serif;
+  font-size: 0.84em;
+ }
+ 
+ul span {
+  color: black;
+  font-weight: normal;
+  font-family: sans-serif;
+  font-size: 0.84em;
+ }
+ 
+blockquote {
+  border-left: solid thick #b91e27;
+ }
+ 
+em {
+  font-style: italic;
+ }
+
+strong {
+  font-weight: bold;
+  color: #b91e27;
+ }
+
 /* Nav to-top elements */
 
 nav.to-top {
@@ -221,17 +263,16 @@ h4 {
 
 
 /*
-Other contenmt elements
+Other content elements
 */
 
 blockquote {
-  border-left: solid thick black;
-  padding: 0 0 0 1em;
-  margin: 0;
+  padding: 0 0 0 1.2em;
+  margin: 0 6em 0 4em;
  }
 
 ul, ol{
- padding: 0 0 0 1.5em;
+ padding: 0 6em 0 6em;
  }
 
 
@@ -254,7 +295,7 @@ nav ul {
   margin: 0 0 0 -22.5em;
   padding: 0;
   float: left;
-  position: fixed;
+  position: absolute;
   width: 45em;
   left: 50%;
   border: solid thin rgb(240,240,240);
