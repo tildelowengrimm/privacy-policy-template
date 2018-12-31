@@ -12,7 +12,7 @@ Also: this stuff is not legal advice, and is no substitute for a real live lawye
 Instructions
 ------------
 
-Make sure to read all the comments. Some of them offer simple advice which you can follow or ignore. Others are placeholders for elements that you need to add or modify. There are also some placeholders like `$APPNAME` which you should find and replace with the sppropriate string for your app. They are:
+Make sure to read all the comments. Some of them offer simple advice which you can follow or ignore. Others are placeholders for elements that you need to add or modify. There are also some placeholders like `$APPNAME` which you should find and replace with the appropriate string for your app. They are:
 
 - `$APPNAME` the name of your app
 
